@@ -1,0 +1,711 @@
+:root {
+    --fondonav: #212E36;
+    --fondobody: #1B2831;
+    --fondportada: #121A21;
+    --fondo1: #212E36;
+    --fondo2: #192229;
+    --fondo3: #141B1F;
+    --coloricon: #62B7F4;
+    --texto1: #5FB2ED;
+    --texto2: #ffffff;
+    --texto3: #64727D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    max-height: 1000px;
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 10px; 
+    background-color: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--texto1);
+}
+
+header {
+    width: 100%;
+    background-color: var(--fondonav);
+    display: flex;
+    height: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: solid 0.2px var(--texto3);
+}
+
+.logo {
+    display: flex;
+    margin-left: 120px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: var(--texto2);
+    margin-right: 100px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.cursos {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    color: #64727D;
+}
+
+.cursos i {
+    font-size: 25px;
+}
+
+.cursos h4 {
+    font-size: 13px;
+}
+
+.usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--texto2);
+    margin-right: 30px;
+    margin-left: 550px;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--texto1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.cerrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerrar button {
+    border: none;
+    background: transparent;
+    color: var(--texto2);
+    font-size: 16px;
+}
+
+.cerrar button:hover {
+    text-decoration: underline;
+    color: var(--texto1);
+}
+
+.contenedor {
+    display: grid;
+    width: 100%;
+    max-height: 684px;
+    /* overflow-y: auto;
+    overscroll-behavior-y: none; */
+    color: #141B1F;
+}
+
+.nav {
+    width: 300px;
+}
+
+.nav__link {
+    color: #303440;
+    width: 100%;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav__link--inside {
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.active {
+    color: #5FB2ED;
+}
+
+.nav__link--inside:hover {
+    background: #F6F8FA;
+}
+
+.list {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: #fff;
+}
+
+.list__item {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click {
+    cursor: pointer;
+}
+
+.list__button {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow {
+    transform: rotate(90deg);
+}
+
+.list__arrow {
+    margin-left: auto;
+    transition: transform .3s;
+    font-size: 25px;
+}
+
+.list__show {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+
+.contenedor {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding: 35px;
+    background-color: var(--fondportada); 
+}
+
+.txtcurso{
+    padding-right: 150px;
+    margin-top: 30px;
+}
+
+.txtcurso button {
+    position: relative;
+    top: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #1192EE;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.txtcurso button:hover {
+    background-color: #1192eec3;
+}
+
+.items-curso {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--texto2);
+    margin-top: 20px;
+}
+
+.nombre-titulo {
+    font-family: 'Inter', sans-serif;
+    color: var(--texto2);
+    font-size: 26px;
+}
+
+.descripcion {
+    margin-top: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    color: #A8AFB4;
+}
+
+.portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada img{
+    width: 650px;
+    height: 300px;   
+    border-radius: .5em; 
+}
+
+.items-curso {
+    color: #A8AFB4;
+}
+
+.items-cursos {
+    display: flex;
+    color: #64727D;
+    margin-top: 10px;
+}
+
+.items-cursos i {
+    color: #12A57F;
+    margin-right: 3px;
+}
+
+.caracteristica {
+    margin-top: 20px;
+    display: flex;
+}
+
+.basico {
+    margin-left: 10px;
+}
+.caracteristica i {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.temario {
+    display: grid;
+    background-color: #192229;
+    height: 600px;
+}
+
+.imgcerti {
+    position: absolute;
+    right: 150px;
+    top: 730px;
+}
+
+.imgcerti h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.imgcerti img {
+    width: 450px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.titulo-temario {
+    padding: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: var(--texto2);
+}
+
+.temas {
+    margin-left: 30px;
+    background-color: #212E36;
+    width: 700px;
+    border-radius: 0.1em;
+    border-bottom: solid #64727D 0.1px;
+    padding: 15px;
+    border-left: solid 4px #44D5A7;
+    color: var(--texto2);
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
+
+.temas p {
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    margin: 10px;
+    color: #8e9ba4;
+}
+
+.infocurso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    background-color: #192229;
+}
+
+.inf {
+    width: 950px;
+    height: 350px;
+    background-color: #212E36;
+    padding: 40px;
+    border-radius: 5px;
+    border-left: solid 5px #1192EE;
+}
+
+.info {
+    padding-bottom: 30px;
+    border-bottom: solid 0.1px #64727D;
+}
+
+.info h3 {
+    color: #ffffff;
+    font-size: 21px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: #b7c1c8;
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.infocursos-conten {
+    display: flex;
+    margin-top: 10px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.iconos {
+    display: flex;
+    color: white;
+}
+
+.items-cur {
+    width: 300px;
+}
+
+#btninscripcion{
+    position: absolute;
+    top: 470px;
+    border: none;
+    border-radius: 5px;
+    background: #1192EE;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.miscursos{
+    display: flex;
+    padding: 30px;
+    background-color: #1B2832;
+    width: 100%;
+    height: 900px;
+}
+
+.curso-card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 10px;
+    align-items: center;
+    width: 425px;
+    height: 325px;
+    border: solid 2px #64727D;
+    color: var(--texto2);
+    font-family: 'Manrope', sans-serif;
+}
+
+.curso-card p {
+    color: var(--texto3);
+}
+
+.curso-card img {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+#btncurso {
+    position: absolute;
+    top: 350px;
+    border: none;
+    border-radius: 5px;
+    background: #1192EE;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btncurso:hover{
+    background: #1192eeb0;
+}
+
+.pruebas{
+    background-color: #192229;
+    width: 100%;
+    height: 145vh;
+    padding: 20px;
+}
+
+.recurso {
+    width: 1080px;
+    
+}
+
+.tema {
+    background-color: #212E36;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 625px;
+}
+
+.temascurso {
+    background-color: #1B2831;
+    width: 350px;
+    /* border-top: solid #74E4C1 3px; */
+    padding: 8px;
+    border-radius: 0.5em;
+    color: var(--texto2);
+    font-family: 'Inter', sans-serif;
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+.barra {
+    display: flex;
+}
+
+.temascurso p {
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    margin: 10px;
+    color: #8e9ba4;
+}
+
+.temaprueba {
+    position: absolute;
+    top: 612px;
+    background-color: #1B2831;
+    width: 350px;
+    /* border-top: solid #74E4C1 3px; */
+    border-radius: 0.5em;
+    padding: 8px;
+    color: var(--texto2);
+    font-family: 'Inter', sans-serif;
+    font-size: 8px;
+}
+
+.tituloTemario {
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 3px #5FB2ED;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #5FB2ED;
+    font-size: 17px;
+}
+
+.temaprueba p {
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    margin: 10px;
+    color: #8e9ba4;
+}
+
+#progreso-bar {
+    width: 325px;
+    height: 12px;
+    background-color: #4C472C;
+    margin-bottom: 20px;
+    position: relative;
+    top: 4px;
+}
+
+#progreso-relleno {
+    height: 100%;
+    background-color: #FFBA42;
+    width: 0;
+    transition: 0.5s;
+}
+
+#progreso-porcentaje {
+    margin-left: 5px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.recurso1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recurso1 img{
+    width: 700px;
+}
+
+.activeselect {
+    border-top: solid #74E4C1 3px;
+    color: #1192EE;
+}
+
+.examen {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+}
+
+.examen header {
+    background-color: #74E4C1;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.examen section {
+    padding: 20px;
+}
+
+.examen h3 {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.examen input[type="radio"] {
+    margin: 5px;
+}
+
+.examen form {
+    text-align: left;
+}
+
+.examen input[type="submit"] {
+    margin-top: 10px;
+    background-color: #74E4C1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.examen #resultados {
+    padding: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+}
+.imgcertificado{
+    display: flex;
+    width: 800px;
+    height: 500px;
+}
+
+.certificate {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+    padding: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.estilocertifi img {
+    width: 200px;
+    height: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.header img {
+    width: 60px;
+    height: 60px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.firma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.firma img {
+    width: 60px;
+    height: 60px;
+}
+
+#imprimirCertificado{
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #FFBA42;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cajacertificado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnDeCertificado {
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #5FB2ED;
+    color: white;
+    width: 300px;
+    height: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}

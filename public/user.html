@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/icon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/user.css">
+    <title>EDsoar</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/icon.png" alt="logo">
+            <h4>EDsoar</h4>
+        </div>
+        <div class="cursos active" id="cursos1" onclick="cambiarContenido('1')">
+            <i class='bx bx-home-alt-2'></i>
+            <h4>Cursos</h4>
+        </div>
+        <div class="cursos" id="cursos2" onclick="miscursos(), cambiarContenido('2')">
+            <i class='bx bx-book-bookmark'></i>
+            <h4>Mis cursos</h4>
+        </div>
+        <div class="usuario">
+            <div class="user" id="user">
+                <p id="letra"></p>
+            </div>
+            <p id="nombreCompleto"> </p>
+        </div>
+        <div class="cerrar">
+            <button id="cerrarSesionBtn" onclick="cerrarSesion()">Cerrar sesión</button>
+        </div>
+    </header>
+    <div class="contenedor" id="contenido">
+    <!-- Aquí va la protada del curso -->
+    <button id="btninscripcion" onclick="insertarIns(), cambiarContenido('3')">Comenzar curso</button>
+    </div>
+    <div class="temario" id="temario">
+    <!-- Aquí va el temario del curso -->
+    <div class="imgcerti">
+        <h3>Recompenzamos tu esfuerzo</h3>
+        <img src="/img/certi.png" alt="">
+    </div>
+    <div class="titulo-temario"><h1>Temario del curso</h1></div>
+    </div>
+    <div class="infocurso" id="infocurso">
+        <div class="inf">
+            <div class="info"><h3>Acerca de este curso</h3>
+                <p>JavaScript es el único lenguaje que te ofrece utilizar tus conocimientos 
+                    tanto en el frontend como en el backend. Aprende las bases de este lenguaje 
+                    y así estarás encaminado a poder decidir el camino que más te guste o tomar 
+                    ambos y convertirte en un Desarrollador FullStack.</p>
+            </div>
+            <div class="infocursos-conten">
+                <div class="items-cur">
+                    <div class="iconos">
+                        <i class='bx bx-book-reader'></i>
+                        <p><strong>¿Qué aprenderás?</strong></p>
+                    </div>
+                    <div class="items-cursos"><i class='bx bxs-check-circle'></i><p>Las bases y particularidades de JS.</p></div>
+                    <div class="items-cursos"><i class='bx bxs-check-circle'></i><p>Escribir código óptimo y reutilizable.</p></div>
+                    <div class="items-cursos"><i class='bx bxs-check-circle'></i><p>Manipular datos y colecciones de datos.</p></div>
+                    <div class="items-cursos"><i class='bx bxs-check-circle'></i><p>Aplicar lógica de programación en JS.</p></div>
+                </div>
+                <div class="items-cur">
+                    <div class="iconos">
+                        <i class='bx bxs-cube-alt'></i>
+                        <p><strong>¿Qué conocimientos previos necesitas?</strong></p>
+                    </div>
+                    <div class="items-cursos"><i class='bx bxs-check-circle'></i><p>Programación desde cero.</p></div>
+                </div>
+                <div class="items-cur">
+                    <div class="iconos">
+                        <i class='bx bxs-group' ></i>
+                        <p><strong>¿A quién está dirigido este curso?</strong></p>
+                    </div>
+                    <div class="items-cursos"><i class='bx bxs-check-circle'></i>
+                        <p>Personas que buscan aprender su primer lenguaje de programación..</p></div>
+                    <div class="items-cursos"><i class='bx bxs-check-circle'></i>
+                        <p>A quienes buscan entender la sintaxis de JavaScript para aplicarla tanto en frontend como en backend.</p></div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="miscursos" id="miscursos">
+        <!-- Aquí van mis cursos -->
+        
+    </div>
+    <div class="pruebas" id="pruebas">
+        <div class="recurso" id="recurso">
+            <div class="recurso1" id="recurso1">
+                
+            </div>
+            
+        </div>
+        <div class="tema" id="tema">
+            <div class="tituloTemario">
+                <i class='bx bx-note'></i><p>Temario</p>
+            </div>
+           <div class="barra">
+                <div id="progreso-bar">
+                    <div id="progreso-relleno"></div>
+                </div>
+            
+                <div id="progreso-porcentaje">0%</div>
+           </div>
+            <div class="temaprueba" id="temaprueba6" onclick="progreso(1, this), examen(), activarSeleccion(6)">
+                <h1>Prueba final</h1><p>Test</p></div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="/js/estiloDinamico.js"></script>
+    <script src="/js/solicitudes.js"></script>
+</body>
+</html>

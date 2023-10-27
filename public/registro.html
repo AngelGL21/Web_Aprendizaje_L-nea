@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/icon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/registro.css">
+    <title>EDsoar | Registro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/img/icon.png" alt="Logo">
+            <h4>EDsoar</h4>
+        </div>
+        <h2>Crea tu cuenta</h2>
+        <div class="form">
+            <form action="/registrar" method="post">
+                <table>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Apellido</td>
+                    </tr>
+                    <tr>
+                        <td><input id="nombre" type="text" placeholder="Escribe tu nombre" required></td>
+                        <td><input id="apellido" type="text" placeholder="Escribe tu apellido" required></td>
+                    </tr>
+                    <tr>
+                        <td>Correo electrónico</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="correo" type="text" placeholder="Escribe tu correo eléctronico" required></td>
+                    </tr>
+                    <tr>
+                        <td>Contraseña</td>
+                        <td>Confirma tu contraseña</td>
+                    </tr>
+                    <tr>
+                        <td><input id="contra1" type="password" placeholder="Contraseña" required></td>
+                        <td><input id="contra2" type="password" placeholder="Confirmar Contraseña" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit" class="btn" id="btnregistrar">Registrar gratis</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="home">
+            <p>¿Ya tienes cuenta? </p><a href="/public/inicio.html">Iniciar sesión</a>
+        </div>
+    </div>
+    <script src="/js/solicitudes.js"></script>
+</body>
+</html>

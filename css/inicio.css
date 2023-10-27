@@ -1,0 +1,502 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    overflow: visible;
+}
+
+header {
+    width: 100%;
+    height: 72px;
+    background-color: #122169;
+    color: white;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    padding-left: 200px;
+    position: relative;
+    top: 3px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nombre {
+    margin-left: 5px;
+}
+
+.nombre p {
+    font-size: 25px;
+}
+
+.pagar {
+    background-color: #1B2832;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.pagar button {
+    border: none;
+    border-radius: 0.2em;
+    width: 250px;
+    height: 60px;
+    background: #F7CE87;
+    font-size: 25px;
+    color: #253541;
+}
+
+.pagar button:hover {
+    background: #f7ce87c1;
+    color: #ffffff;
+}
+
+.vienvenida {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    height: 650px;
+    background-color: #073879;
+    margin: 0;
+    
+}
+
+.texto {
+    display: grid;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.conten {
+    height: 200px;
+    width: 600px;
+    color: white;
+    text-align: justify;
+}
+
+.conten h1 {
+    font-size: 40px;
+    color: #F7CE87;
+}
+
+.login {
+    display: grid;
+}
+
+.image1 {
+    width: 60px;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    transform: skew(0deg, 15deg);
+    animation: flotar1 4s ease-in-out infinite;
+}
+
+.image2 {
+    width: 60px;
+    position: absolute;
+    top: 360px;
+    left: 20px;
+    transform: skew(0deg, 15deg);
+    animation: flotar2 4s ease-in-out infinite;
+}
+
+.image3 {
+    width: 70px;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    transform: skew(0deg, 15deg);
+    animation: flotar1 4s ease-in-out infinite;
+}
+
+.image4 {
+    width: 50px;
+    position: absolute;
+    top: 500px;
+    left: 600px;
+    transform: skew(0deg, 15deg);
+    animation: flotar2 4s ease-in-out infinite;
+}
+
+.image5 {
+    width: 60px;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    transform: skew(0deg, 15deg);
+    animation: flotar1 4s ease-in-out infinite;
+}
+
+.image6 {
+    width: 55px;
+    position: absolute;
+    left: 710px;
+    transform: skew(0deg, 15deg);
+    animation: flotar2 4s ease-in-out infinite; 
+}
+
+@keyframes flotar1 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+@keyframes flotar2 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+.login {
+    padding: 40px;
+}
+
+.contenedor {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.178);
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    padding: 60px;
+}
+
+.title {
+    text-align: center;
+}
+
+.input {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    margin: 50px 0;
+}
+
+.input label {
+    height: 70px;
+}
+
+.input input {
+    width: 90%;
+    height: 20%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 225, 0, 0.381);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.input input::placeholder {
+    color: #ffffff4f;
+}
+
+.input i {
+    position: absolute;
+    right: 15px;
+    top: 45px;
+    font-size: 20px;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #F7CE87;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #edbd6ae0;
+}
+
+.create_account {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.create_account p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.create_account p a:hover {
+    text-decoration: underline;
+}
+
+.mas {
+    height: 550px;
+    background-color: #1B2832;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.mas h1, samp {
+    font-size: 40px;
+}
+
+.mas samp {
+    color: #35A9FD;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mas h1 {
+    color: white;
+}
+
+.mas p {
+    color: rgba(255, 255, 255, 0.612);
+}
+
+.tarjeta {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    margin-left: 65px;
+}
+
+.tarjetas {
+    width: 350px;
+    height: 240px;
+    background-color: #253541;
+    border-radius: 0.3em;
+    border-top: solid 4px #35A9FD;
+}
+
+.tarjetas p {
+    padding: 10px;
+}
+
+h3{
+    color: white;
+}
+
+.tarjetas img {
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #111B22;
+    color: #fff;
+    padding: 25px 200px;
+}
+
+.cajistas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cajasss {
+    display: flex;
+}
+
+.cajasss img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    position: relative;
+    top: 13px;
+}
+
+.cajass {
+    flex: 1;
+    padding: 10px;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.redes {
+    display: flex;
+}
+
+.redescir {
+    display: flex;
+    margin-left: 535px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.burbuja {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff1d;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.burbuja i {
+    font-size: 20px;
+}
+
+.burbuja:hover {
+    background-color: #ffffff36;
+}
+
+
+@media (max-width: 768px) {
+   
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        width: 100%;
+        height: 72px;
+        background-color: #122169;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        padding-left: 10px;
+        position: relative;
+        top: 3px;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .texto{
+        display: none;
+    }
+
+    .vienvenida {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conten {
+        padding: 10px;
+    }
+
+    .mas {
+        height: 1100px;
+        background-color: #1B2832;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tarjeta {
+        display: grid;
+        grid-template-rows: 3fr;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 50px;
+        margin-left: 130px;
+    }
+    
+    .tarjetas {
+        width: 300px;
+        height: 230px;
+        background-color: #253541;
+        border-radius: 0.3em;
+        border-top: solid 4px #35A9FD;
+    }
+    
+    .cajistas {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .cajasss {
+        display: none;
+    }
+    
+    .cajass {
+        flex: 1;
+        padding: 10px;
+        margin-left: 30px;
+        font-size: 14px;
+    }
+    
+    .redes {
+        display: flex;
+    }
+
+    .redes p {
+        display: none;
+    }
+    
+    .redescir {
+        display: flex;
+        gap: 15px;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        padding: 10px 10px;
+    }
+}
+
